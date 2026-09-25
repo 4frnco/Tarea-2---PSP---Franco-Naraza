@@ -9,7 +9,7 @@ public class Interfaz {
         Lanzador lanzador = new Lanzador();
 
         // preguntamos el nivel al arrancar el programa (el nivel 3 no esta implementado)
-        System.out.println("¿Qué nivel quieres usar? (1, 2 o 4):");
+        System.out.println("¿Qué nivel quieres usar franco? (1, 2 o 4):");
         String nivelTexto = sc.nextLine();
 
         int nivel;
@@ -31,7 +31,7 @@ public class Interfaz {
 
         // bucle principal, sigue pidiendo numeros hasta que se escriba "salir"
         while (true) {
-            System.out.println("Introduce un número (o 'salir' para terminar):");
+            System.out.println("franco, introduce un número (o 'salir' para terminar):");
             System.out.print("> ");
             String entrada = sc.nextLine();
 
@@ -56,11 +56,11 @@ public class Interfaz {
                         break;
                 }
 
-                System.out.println("Operación completada. Código de salida: " + codigo);
+                System.out.println("Operación completada franco. Código de salida: " + codigo);
 
             } catch (Exception e) {
                 // por si algo raro pasa al lanzar el proceso (por ejemplo que no exista el comando)
-                System.out.println("Ha ocurrido un error al ejecutar el comando: " + e.getMessage());
+                System.out.println("franco ha ocurrido un error al ejecutar el comando: " + e.getMessage());
             }
         }
 
