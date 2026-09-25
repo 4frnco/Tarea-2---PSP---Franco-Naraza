@@ -45,6 +45,7 @@ Salida en terminal:
 ![2.png](capturas/2.png)
 ## Nivel 2
 ![3.png](capturas/3.png)
+
 La salida correcta aparecerá con `[OK]` y los errores con `[ERROR]`.
 
 Ejemplo:
@@ -61,6 +62,7 @@ Salida en terminal:
 ## Nivel 4
 
 ![5.png](capturas/5.png)
+
 Además de mostrar el resultado de `factor`, el programa comprueba si el número es primo.
 
 Ejemplo:
