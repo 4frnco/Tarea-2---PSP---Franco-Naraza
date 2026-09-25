@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // esta clase es la que habla con el usuario: pregunta el nivel,
-// pide numeros en bucle y se los pasa al Lanzador
+// pide números en bucle y se los pasa al Lanzador
 public class Interfaz {
 
     public static void main(String[] args) {
@@ -13,12 +13,20 @@ public class Interfaz {
         String nivelTexto = sc.nextLine();
 
         int nivel;
+
         try {
             nivel = Integer.parseInt(nivelTexto.trim());
+
+            if (nivel != 1 && nivel != 2 && nivel != 4) {
+                System.out.println("Nivel no valido.");
+                sc.close();
+                return;
+            }
+
         } catch (NumberFormatException e) {
-            // si escriben cualquier cosa que no sea un numero, usamos el nivel 1 por defecto
-            System.out.println("Nivel no valido, se usara el nivel 1 por defecto.");
-            nivel = 1;
+            System.out.println("Nivel no valido.");
+            sc.close();
+            return;
         }
 
         // bucle principal, sigue pidiendo numeros hasta que se escriba "salir"
